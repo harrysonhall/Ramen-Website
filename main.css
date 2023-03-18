@@ -1,0 +1,180 @@
+@font-face {
+	font-family: SatoshiRegular;
+	src: url("./fonts/Satoshi-Regular.ttf");
+}
+
+@font-face {
+	font-family: SatoshiMedium;
+	src: url("./fonts/Satoshi-Medium.ttf");
+}
+
+@font-face {
+	font-family: SatoshiBold;
+	src: url("./fonts/Satoshi-Bold.ttf");
+}
+
+@font-face {
+	font-family: DharmaGhothic;
+	src: url("./fonts/DharmaGothicC-ExBold.ttf");
+}
+
+* {
+	border: solid red 1px;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background-color: #FAF5E5;
+}
+
+body {
+	height: 100dvh;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+}
+
+	.header {
+		display: flex;
+		margin: 5dvh 5dvw;
+		text-transform: uppercase;
+		justify-content: space-around;
+		align-items: center;
+		color: #201B19;
+	}
+
+		.sub-header {
+			display: flex;
+		}
+
+			.sub-header-text {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				position: relative;
+				white-space: nowrap;
+				margin: 0 2dvw;
+				font-size: 1rem;
+				font-family: SatoshiBold;
+				text-align: center;
+			}
+
+			.sub-header-text-logo {
+				font-family: DharmaGhothic;
+				font-size: 3.5rem;
+				text-align: center;
+				line-height: 3rem;
+				transition: font-size 250ms;
+			}
+
+			.sub-header-text-logo:hover {
+				font-size: 4rem;
+			}
+
+
+			/* Underline effect */
+			.line {
+				display: flex;
+				width: 0%;
+				height: 0.15rem;
+				position: absolute;
+				top: 1.3rem;
+				left: auto;
+				right: 0;
+				background-color: #201B19;
+				transition: width 250ms;
+			}
+
+			.sub-header-text:hover .line{
+				width: 100%;
+				left: 0;
+				right: auto;
+			}
+
+
+
+	main {
+		height: 25vh;
+	}
+
+	.footer {
+		
+	}
+	
+		.sub-footer {
+			display: flex;
+			height: 15rem;
+			padding-top: 2rem;
+			/* justify-content: space-evenly; */
+			justify-content: center;
+		}
+
+			.sub-footer-logo {
+				font-family: DharmaGhothic;
+				text-transform: uppercase;
+				font-size: 9rem;
+				line-height: 6rem;
+				text-align: center;
+				height: fit-content;
+				margin-right: 9dvw;
+				transition: font-size 500ms;
+			}
+
+			.sub-footer-logo:hover {
+				font-size: 7rem;
+			}
+
+			#sub-footer-details {
+				display: flex;
+				flex-direction: row;
+			}
+
+				.sub-footer-text {
+					margin-right: 3dvw;
+					height: fit-content;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					white-space: nowrap;
+					text-align: center;
+				}
+
+					.sub-footer-header {
+						font-family: SatoshiBold;
+						font-size: 1.3rem;
+						text-transform: uppercase;
+						margin-bottom: 1rem;
+					}
+
+					.sub-footer-sub-text {
+						font-family: SatoshiRegular;
+						font-size: 0.9rem;
+					}
+
+					#our-hours > div {
+						display: flex;
+					}
+
+						#sub-footer-days {
+							text-align: end;
+						}
+
+						#sub-footer-hours {
+							text-align: start;
+						}
+
+
+		#sub-footer-closing {
+			height: 3rem;
+			width: 100%;
+			background-color: #201B19;
+			color: #FAF5E5;
+			font-family: SatoshiRegular;
+			font-size: 0.8rem;
+		}
